@@ -15,6 +15,6 @@ public class Array {
     }
 
     public static int countSubSequences(int n) {
-        return (int) Math.pow(2, n);
+        return (int) Math.pow(2, n); // or 1 << n
     }
 }

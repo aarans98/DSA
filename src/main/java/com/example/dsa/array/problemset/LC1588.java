@@ -4,11 +4,11 @@ public class LC1588 {
 
     public static void main(String[] args) {
         int[] arr = {1,4,2,5,3};
-        System.out.println(sumOddLengthSubarraysBruteForce(arr));
-        System.out.println(sumOddLengthSubarraysOptimalSolution(arr));
+        System.out.println(sumOddLengthSubArraysBruteForce(arr));
+        System.out.println(sumOddLengthSubArraysOptimalSolution(arr));
     }
 
-    public static int sumOddLengthSubarraysBruteForce(int[] arr) {
+    public static int sumOddLengthSubArraysBruteForce(int[] arr) {
         int ans = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i; j < arr.length; j++) {
@@ -28,7 +28,7 @@ public class LC1588 {
     }
 
     // intuition: https://www.youtube.com/watch?v=J5IIH35EBVE&t=18s
-    public static int sumOddLengthSubarraysOptimalSolution(int[] arr) {
+    public static int sumOddLengthSubArraysOptimalSolution(int[] arr) {
         int sum = 0;
         int n = arr.length;
         for (int i = 0; i < n; i++) {
